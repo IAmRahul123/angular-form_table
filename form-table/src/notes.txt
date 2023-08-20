@@ -1,0 +1,45 @@
+// this._toastr.success('Saved Successfully', 'User Master is Title');
+    // this._toastr.warning('warning Successfully', 'User Master');
+    // this._toastr.error('error Successfully', 'User Master');
+    // this._toastr.info('info', 'User Master');
+
+    Swal.fire('title', 'body', 'success');
+    Swal.fire({
+      title: 'Are you sure?',
+      text: 'You will not be able to recover this record!',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Yes,delete it!',
+      cancelButtonText: 'No,keep it',
+    }).then((result) => {
+      if (result.value) {
+        Swal.fire('Deleted!', 'Your record has been deleted', 'success');
+      } else {
+        Swal.fire('Cancelled', 'Your record is safe :)', 'error');
+      }
+    });
+
+
+
+
+
+
+    <button class="btn btn-primary m-2">Save</button>
+
+<button class="btn btn-success">Submit</button>
+
+<i class="fa fa-edit m-5"></i>
+<i class="fa fa-trash"></i>
+
+
+
+/^\d{4}-\d{2}-\d{2}$/
+
+^(19|20)\d\d[- /.] (0[1-9]|1[012])[- /.] (0[1-9]|[12][0-9]|3[01])$ 
+
+/([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))/
+
+
+//Tutorial regex yyyy-mm-dd format
+
+  /^\d{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])$/
